@@ -60,7 +60,7 @@ time_dict = {}
 
 # Take user input for creating three dictionaries
 for i in range(5):
-    course= str(input("Please enter the course number: "))
+    course = str(input("Please enter the course number: "))
     room = str(input("Please enter the room number: "))
     instructor = str(input("Please enter the instructor name: "))
     time = input("Please enter the class time: ")
