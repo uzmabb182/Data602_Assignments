@@ -43,7 +43,7 @@ for n in range(2):
     length = int(input(f"Enter the length of a rectangle {n+1}: "))
     width = int(input(f"Enter the width of a rectangle {n+1}: "))
 
-    # Calling the funtion
+    # Calling the function
     rectangle_area = area_calc(length, width)
     print(f"The area of rectangle {n+1} is: " + str(rectangle_area))
 #Q3 

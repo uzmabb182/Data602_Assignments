@@ -59,7 +59,7 @@ inst_dict = {}
 time_dict = {}
 
 # Take user input for creating three dictionaries
-for i in range(5):
+for i in range(2):
     course = str(input("Please enter the course number: "))
     room = str(input("Please enter the room number: "))
     instructor = str(input("Please enter the instructor name: "))
@@ -81,22 +81,15 @@ student_dict["time_info"] = time_dict
 
 print(student_dict)
 
+
 course_num = str(input("Please enter the course number: "))
 
-if course_num in student_dict["room_info"]:
+if course_num in student_dict["room_info"] or course_num in student_dict["inst_info"] or course_num in student_dict["time_info"]:
     print("The course room number is: " + str(student_dict["room_info"][course_num]))
-else:
-    print("The room number is not assigned")
-
-if course_num in student_dict["inst_info"]:
     print("The course instructor name is: " + str(student_dict["inst_info"][course_num]))
-else:
-    print("The course instructor is not assigned")
-
-if course_num in student_dict["time_info"]:
     print("The course timing is: " + str(student_dict["time_info"][course_num]))
 else:
-    print("The course timing is not assigned")
+    print("Sorry the information is not found")
 
 # Q5. Write a program that keeps names and email addresses in a dictionary as
 # key-value pairs. The program should then demonstrate the four options:
