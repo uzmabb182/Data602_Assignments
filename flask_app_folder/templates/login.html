@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="starter-template">
+  <h1>Title of Final Project</h1>
+  <p class="lead"><i>Subtitle of Project</i></p>
+
+  <form action="{{ url_for("login")}}" method="post">
+    <label for="firstname">First Name:</label>
+    <input type="text" id="firstname" name="fname" placeholder="firstname">
+    <label for="lastname">Last Name:</label>
+    <input type="text" id="lastname" name="lname" placeholder="lastname">
+    <button type="submit">Login</button>
+  </form>
+</div>
+
+{% endblock %}
