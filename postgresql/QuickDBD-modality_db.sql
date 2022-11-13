@@ -16,33 +16,25 @@ CREATE TABLE "fips_df" (
 );
 
 CREATE TABLE "modality_df" (
-    "id" int   NOT NULL,
-    "stcountyfp" int   NOT NULL,
     "countyname" varchar   NOT NULL,
+    "stcountyfp" int   NOT NULL,
     "learning_modality" varchar   NOT NULL,
     "operational_schools" int   NOT NULL,
     "state" varchar   NOT NULL,
     "zip_code" int   NOT NULL,
     "year" int   NOT NULL,
     "month" int   NOT NULL,
-    "avg_student_count" int   NOT NULL,
-    CONSTRAINT "pk_modality_df" PRIMARY KEY (
-        "id"
-     )
+    "avg_student_count" int   NOT NULL
 );
 
 CREATE TABLE "covid_df" (
-    "id" int   NOT NULL,
-    "fips" int   NOT NULL,
     "county" varchar   NOT NULL,
+    "fips" int   NOT NULL,
     "state" varchar   NOT NULL,
     "year" int   NOT NULL,
     "month" int   NOT NULL,
     "cases_count" int   NOT NULL,
-    "deaths_count" int   NOT NULL,
-    CONSTRAINT "pk_covid_df" PRIMARY KEY (
-        "id"
-     )
+    "deaths_count" int   NOT NULL
 );
 
 ALTER TABLE "modality_df" ADD CONSTRAINT "fk_modality_df_stcountyfp" FOREIGN KEY("stcountyfp")
