@@ -29,3 +29,9 @@ CREATE TABLE "covid" (
     "deaths_count" int   NOT NULL
 );
 
+
+SELECT * FROM "fips";
+
+SELECT * FROM "covid";
+
+SELECT * FROM "modality";
