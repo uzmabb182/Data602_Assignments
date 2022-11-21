@@ -9,7 +9,7 @@ function init() {
     let state_selector = d3.select("#selStateDataset");
     // let county_selector = d3.select("#selCountyDataset");
   
-    d3.json("/state-list").then(function (data) {
+    d3.json("/state_list").then(function (data) {
         console.log(data);
         // rand_state=Math.floor(Math.random() * 48);
         let state_data = Object.values(data.state)

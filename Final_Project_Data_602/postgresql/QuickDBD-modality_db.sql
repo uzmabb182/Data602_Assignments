@@ -29,9 +29,29 @@ CREATE TABLE "covid" (
     "deaths_count" int   NOT NULL
 );
 
+=========
+
+
 
 SELECT * FROM "fips";
 
 SELECT * FROM "covid";
 
-SELECT * FROM "modality";
+SELECT * 
+FROM "covid" 
+WHERE "year" = 2021
+
+
+SELECT * 
+FROM "modality" 
+WHERE "year" = 2021
+
+SELECT
+   DISTINCT "state"
+FROM
+   "covid";
+   
+SELECT
+   DISTINCT "countyname"
+FROM
+   "covid";
