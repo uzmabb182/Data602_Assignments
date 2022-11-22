@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, request, jsonify
 import pandas as pd
 import sqlalchemy
 from sqlalchemy import create_engine
@@ -27,32 +27,56 @@ def about():
 @app.route('/plotly')
 def plotly():
     return render_template('index.html')
-
-@app.route('/plotly_dash')
-def map_leaf():
-    return render_template('plotly_dash.html') 
  
 
 @app.route("/state_list")
-def income():
+def state_name():
 
     df1 = pd.read_sql("""SELECT DISTINCT state 
-        FROM covid
+        FROM covid_df
 		Group BY state
 		ORDER BY state;""",conn)
 
-    income_results = df1.to_json()
-    return income_results
+    state_results = df1.to_json()
+    return state_results
     
-@app.route("/year-list")
-def state():
+@app.route("/year_list")
+def year__choose():
 
     df2 = pd.read_sql("""SELECT DISTINCT year
-          FROM covid;     
-        """,conn)
+          FROM covid_df
+          Order By year;""",conn)
 
-    census_results = df2.to_json()
-    return census_results
+    year_results = df2.to_json()
+    return year_results
+
+@app.route("/search_state/<state>/<year>")
+def state_search(state, year):
+
+    df3 = pd.read_sql(f"""SELECT * 
+          FROM covid_df 
+          WHERE year = '{year}'
+          AND state = '{state}';
+          """,conn)
+
+    search_state_results = df3.to_json()
+    return search_state_results
+
+
+@app.route("/covid_data/<year>")
+def covid_results(year):
+
+    df4 = pd.read_sql(f"""SELECT state, SUM(cases_count) AS total_cases, 
+          SUM(deaths_count) AS total_deaths
+          FROM covid_df
+          WHERE year = '{year}'
+          GROUP By state
+          ORDER BY state;
+          """,conn)
+
+    covid_data_results = df4.to_json()
+    return covid_data_results
+
 
 
 @app.errorhandler(404)
