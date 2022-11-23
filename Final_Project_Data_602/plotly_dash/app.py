@@ -1,39 +1,79 @@
 from dash import Dash, dcc, html, Input, Output
+import dash_bootstrap_components as dbc
 import plotly.express as px
-
 import pandas as pd
+import sqlalchemy
+from sqlalchemy import create_engine
+# Note you need to create a config.py file 
+from config import db_username, db_password
 
-df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/gapminderDataFiveYear.csv')
+# Database Setup using SQLAlchmy ORM
+engine = create_engine(f"postgresql://{db_username}:{db_password}@localhost:5432/covid_modality_db")
+conn = engine.connect()
 
 app = Dash(__name__)
 
-app.layout = html.Div([
-    dcc.Graph(id='graph-with-slider'),
-    dcc.Slider(
-        df['year'].min(),
-        df['year'].max(),
-        step=None,
-        value=df['year'].min(),
-        marks={str(year): str(year) for year in df['year'].unique()},
-        id='year-slider'
-    )
-])
+df1 = pd.read_sql("""SELECT state, SUM(cases_count) AS total_cases, SUM(deaths_count) AS total_deaths
+        FROM covid_df
+        WHERE year = 2021
+        GROUP By state
+        ORDER BY state;""",conn)
 
+df2 = pd.read_sql("""SELECT state, SUM(cases_count) AS total_cases, SUM(deaths_count) AS total_deaths
+        FROM covid_df
+        WHERE year = 2022
+        GROUP By state
+        ORDER BY state;""",conn)
 
+# Build your components
+app = Dash(__name__, external_stylesheets=[dbc.themes.VAPOR])
+mytitle = dcc.Markdown(children='# App that Analyzes Covid Data for the Year 2021/2022')
+mygraph = dcc.Graph(figure={})
+dropdownGraph = dcc.Dropdown(options=['Bar Plot1', 'Bar Plot2', 'Scatter Plot'],
+                        value='Bar Plot1',  # initial value displayed when page first loads
+                        clearable=False)
+
+dropdownYear = dcc.Dropdown(options=['2021', '2022'],
+                        value='2021',  # initial value displayed when page first loads
+                        clearable=False)
+
+# Customize your own Layout
+app.layout = dbc.Container([mytitle, mygraph, dropdownGraph, dropdownYear])
+
+# Callback allows components to interact
 @app.callback(
-    Output('graph-with-slider', 'figure'),
-    Input('year-slider', 'value'))
-def update_figure(selected_year):
-    filtered_df = df[df.year == selected_year]
+    Output(mygraph, component_property='figure'),
+    Input(dropdownGraph, component_property='value'),
+    Input(dropdownYear, component_property='value')
+)
+def update_graph(user_input_graph, user_input_year):  # function arguments come from the component property of the Input
+    if user_input_year == '2021':
+        if user_input_graph == 'Bar Plot1':
+            fig = px.bar(df1, x="total_cases", y="state", color="state")
 
-    fig = px.scatter(filtered_df, x="gdpPercap", y="lifeExp",
-                     size="pop", color="continent", hover_name="country",
-                     log_x=True, size_max=55)
+        if user_input_graph == 'Bar Plot2':
+            fig = px.bar(df1, x="total_deaths", y="state", color="state")
 
-    fig.update_layout(transition_duration=500)
+        elif user_input_graph == 'Scatter Plot':
+            fig = px.scatter(df1, x="total_cases", y="state",
+                    size="total_deaths", color="state", hover_name="total_deaths",
+                    log_x=True, size_max=60)
 
-    return fig
+    elif user_input_year == '2022':
+        if user_input_graph == 'Bar Plot1':
+            fig = px.bar(df2, x="total_cases", y="state", color="state")
+
+        if user_input_graph == 'Bar Plot2':
+            fig = px.bar(df2, x="total_deaths", y="state", color="state")
+
+        elif user_input_graph == 'Scatter Plot':
+            fig = px.scatter(df2, x="total_cases", y="state",
+                    size="total_deaths", color="state", hover_name="total_deaths",
+                    log_x=True, size_max=60)
+       
+    return fig  # returned objects are assigned to the component property of the Output
 
 
-if __name__ == '__main__':
+# Run app
+if __name__=='__main__':
     app.run_server(debug=True)
