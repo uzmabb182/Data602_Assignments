@@ -11,7 +11,6 @@ CREATE TABLE "fips" (
     "fips" int   NOT NULL
 );
 
-
 CREATE TABLE "modality" (
     "countyname" varchar   NOT NULL,
     "fips" int   NOT NULL,
@@ -19,7 +18,7 @@ CREATE TABLE "modality" (
     "state" varchar   NOT NULL,
     "abbreviation" varchar   NOT NULL,
     "year" int   NOT NULL,
-    "avg_student_count" int   NOT NULL
+    "student_count" int   NOT NULL
 );
 
 CREATE TABLE "covid" (
