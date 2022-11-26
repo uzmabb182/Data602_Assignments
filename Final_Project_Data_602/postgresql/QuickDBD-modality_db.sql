@@ -18,7 +18,7 @@ CREATE TABLE "modality_df" (
     "state" varchar   NOT NULL,
     "population" int   NOT NULL,
     "abbreviation" varchar   NOT NULL,
-    "student_count_per_10K" int   NOT NULL
+    "student_count_per_10K" decimal   NOT NULL
 );
 
 CREATE TABLE "covid_df" (
@@ -28,7 +28,7 @@ CREATE TABLE "covid_df" (
     "state" varchar   NOT NULL,
     "population" int   NOT NULL,
     "abbreviation" varchar   NOT NULL,
-    "cases_per_10k" int   NOT NULL,
-    "deaths_per_10k" int   NOT NULL
+    "cases_per_10k" decimal   NOT NULL,
+    "deaths_per_10k" decimal   NOT NULL
 );
 
