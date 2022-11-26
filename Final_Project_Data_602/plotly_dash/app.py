@@ -13,14 +13,14 @@ conn = engine.connect()
 
 app = Dash(__name__)
 
-df1 = pd.read_sql("""SELECT state, SUM(cases_count) AS total_cases, SUM(deaths_count) AS total_deaths
-        FROM covid_df
+df1 = pd.read_sql("""SELECT state, SUM(cases) AS total_cases, SUM(deaths) AS total_deaths
+        FROM covid
         WHERE year = 2021
         GROUP By state
         ORDER BY state;""",conn)
 
-df2 = pd.read_sql("""SELECT state, SUM(cases_count) AS total_cases, SUM(deaths_count) AS total_deaths
-        FROM covid_df
+df2 = pd.read_sql("""SELECT state, SUM(cases) AS total_cases, SUM(deaths) AS total_deaths
+        FROM covid
         WHERE year = 2022
         GROUP By state
         ORDER BY state;""",conn)

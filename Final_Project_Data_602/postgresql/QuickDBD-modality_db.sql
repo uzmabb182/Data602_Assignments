@@ -25,3 +25,12 @@ CREATE TABLE "covid" (
     "year" int   NOT NULL
 );
 
+
+SELECT * 
+FROM states;
+
+SELECT * 
+FROM covid;
+
+SELECT * 
+FROM modality;
