@@ -1,4 +1,4 @@
-learning_modality,year,student_count,state,population,abbreviation,student_count_per_capita
+learning_modality,year,student_count,state,population,abbreviation,student_count_per_10k
 Hybrid,2021,12621,Alaska,736990,AK,171.25062755261266
 Hybrid,2021,8149,Alabama,4893186,AL,16.65377118302881
 Hybrid,2021,1343,Arkansas,3011873,AR,4.459019354401729

@@ -1,4 +1,4 @@
-cases,deaths,year,state,population,abbreviation,cases_per_capita,deaths_per_capita
+cases,deaths,year,state,population,abbreviation,cases_per_10k,deaths_per_10k
 365747,4872,2021,Alabama,4893186,AL,747.461878620596,9.956703056045694
 46740,198,2021,Alaska,736990,AK,634.2012781720241,2.6866036174167895
 530267,9015,2021,Arizona,7174064,AZ,739.1445072137634,12.56609921517288
