@@ -1,272 +1,281 @@
-State,Abbreviation,learning_modality,year,student_count
-Alabama,AL,Hybrid,2021,374899
-Alabama,AL,Hybrid,2022,427920
-Alabama,AL,In Person,2021,14839024
-Alabama,AL,In Person,2022,28850112
-Alabama,AL,Remote,2021,17507
-Alabama,AL,Remote,2022,48084
-Alaska,AK,Hybrid,2021,63105
-Alaska,AK,Hybrid,2022,31714
-Alaska,AK,In Person,2021,2623906
-Alaska,AK,In Person,2022,5291995
-Arizona,AZ,Hybrid,2021,158363
-Arizona,AZ,Hybrid,2022,267447
-Arizona,AZ,In Person,2021,23241569
-Arizona,AZ,In Person,2022,45376870
-Arizona,AZ,Remote,2021,148924
-Arizona,AZ,Remote,2022,197330
-Arkansas,AR,Hybrid,2021,188044
-Arkansas,AR,Hybrid,2022,382450
-Arkansas,AR,In Person,2021,9900046
-Arkansas,AR,In Person,2022,19476216
-Arkansas,AR,Remote,2022,1880
-California,CA,Hybrid,2021,449502
-California,CA,Hybrid,2022,338226
-California,CA,In Person,2021,123890009
-California,CA,In Person,2022,243137265
-California,CA,Remote,2021,2976
-California,CA,Remote,2022,29706
-Colorado,CO,Hybrid,2021,647227
-Colorado,CO,Hybrid,2022,687886
-Colorado,CO,In Person,2021,18779947
-Colorado,CO,In Person,2022,36911532
-Colorado,CO,Remote,2021,2949
-Colorado,CO,Remote,2022,6950
-Connecticut,CT,Hybrid,2021,38609
-Connecticut,CT,Hybrid,2022,60940
-Connecticut,CT,In Person,2021,10517853
-Connecticut,CT,In Person,2022,19789288
-Delaware,DE,Hybrid,2021,53686
-Delaware,DE,Hybrid,2022,68536
-Delaware,DE,In Person,2021,2944772
-Delaware,DE,In Person,2022,5677099
-Delaware,DE,Remote,2022,10946
-District of Columbia,DC,Hybrid,2021,102869
-District of Columbia,DC,Hybrid,2022,178429
-District of Columbia,DC,In Person,2021,1793586
-District of Columbia,DC,In Person,2022,3572055
-District of Columbia,DC,Remote,2022,1001
-Florida,FL,Hybrid,2021,1047825
-Florida,FL,In Person,2021,60834781
-Florida,FL,In Person,2022,120936628
-Georgia,GA,Hybrid,2021,1994390
-Georgia,GA,Hybrid,2022,892840
-Georgia,GA,In Person,2021,34234324
-Georgia,GA,In Person,2022,70709262
-Georgia,GA,Remote,2021,270720
-Georgia,GA,Remote,2022,32030
-Hawaii,HI,Hybrid,2021,905440
-Hawaii,HI,Hybrid,2022,181088
-Hawaii,HI,In Person,2021,3078496
-Hawaii,HI,In Person,2022,7605696
-Idaho,ID,Hybrid,2021,54815
-Idaho,ID,Hybrid,2022,112764
-Idaho,ID,In Person,2021,6474814
-Idaho,ID,In Person,2022,12455323
-Idaho,ID,Remote,2021,29707
-Idaho,ID,Remote,2022,2777
-Illinois,IL,Hybrid,2021,1570574
-Illinois,IL,Hybrid,2022,1063469
-Illinois,IL,In Person,2021,39579932
-Illinois,IL,In Person,2022,78135693
-Illinois,IL,Remote,2021,18325
-Illinois,IL,Remote,2022,88264
-Indiana,IN,Hybrid,2021,104921
-Indiana,IN,Hybrid,2022,310975
-Indiana,IN,In Person,2021,21652225
-Indiana,IN,In Person,2022,41511319
-Indiana,IN,Remote,2021,18155
-Indiana,IN,Remote,2022,59344
-Iowa,IA,Hybrid,2021,7575
-Iowa,IA,Hybrid,2022,46147
-Iowa,IA,In Person,2021,10864947
-Iowa,IA,In Person,2022,21013924
-Kansas,KS,Hybrid,2021,34140
-Kansas,KS,Hybrid,2022,266350
-Kansas,KS,In Person,2021,10659832
-Kansas,KS,In Person,2022,20576288
-Kansas,KS,Remote,2021,1872
-Kentucky,KY,Hybrid,2021,252625
-Kentucky,KY,Hybrid,2022,617182
-Kentucky,KY,In Person,2021,13764384
-Kentucky,KY,In Person,2022,27050754
-Kentucky,KY,Remote,2021,41707
-Kentucky,KY,Remote,2022,106101
-Louisiana,LA,Hybrid,2021,188849
-Louisiana,LA,Hybrid,2022,134532
-Louisiana,LA,In Person,2021,13838075
-Louisiana,LA,In Person,2022,27638049
-Louisiana,LA,Remote,2021,28881
-Louisiana,LA,Remote,2022,75277
-Maine,ME,Hybrid,2021,78564
-Maine,ME,Hybrid,2022,55495
-Maine,ME,In Person,2021,3470391
-Maine,ME,In Person,2022,6795302
-Maine,ME,Remote,2021,3032
-Montana,MT,Hybrid,2021,8605
-Montana,MT,Hybrid,2022,2633
-Montana,MT,In Person,2021,2926782
-Montana,MT,In Person,2022,5876448
-Montana,MT,Remote,2021,1934
-Montana,MT,Remote,2022,831
-Nebraska,NE,Hybrid,2021,70437
-Nebraska,NE,Hybrid,2022,290652
-Nebraska,NE,In Person,2021,6887118
-Nebraska,NE,In Person,2022,13348185
-Nevada,NV,Hybrid,2021,659106
-Nevada,NV,Hybrid,2022,734128
-Nevada,NV,In Person,2021,8912214
-Nevada,NV,In Person,2022,18348759
-Nevada,NV,Remote,2021,16746
-New Hampshire,NH,Hybrid,2021,5774
-New Hampshire,NH,Hybrid,2022,17974
-New Hampshire,NH,In Person,2021,3289291
-New Hampshire,NH,In Person,2022,6324672
-New Jersey,NJ,Hybrid,2021,159375
-New Jersey,NJ,Hybrid,2022,306113
-New Jersey,NJ,In Person,2021,28031169
-New Jersey,NJ,In Person,2022,53357791
-New Jersey,NJ,Remote,2021,1513
-New Jersey,NJ,Remote,2022,736218
-New Mexico,NM,Hybrid,2021,210676
-New Mexico,NM,Hybrid,2022,829198
-New Mexico,NM,In Person,2021,6767302
-New Mexico,NM,In Person,2022,13091158
-New Mexico,NM,Remote,2021,9067
-New Mexico,NM,Remote,2022,16698
-New York,NY,Hybrid,2021,953263
-New York,NY,Hybrid,2022,232441
-New York,NY,In Person,2021,55207730
-New York,NY,In Person,2022,108451750
-New York,NY,Remote,2021,22163
-New York,NY,Remote,2022,94141
-North Carolina,NC,Hybrid,2021,1486751
-North Carolina,NC,Hybrid,2022,738820
-North Carolina,NC,In Person,2021,31907836
-North Carolina,NC,In Person,2022,64429639
-North Carolina,NC,Remote,2021,2995
-North Carolina,NC,Remote,2022,1026
-North Dakota,ND,Hybrid,2022,2591
-North Dakota,ND,In Person,2021,2241310
-North Dakota,ND,In Person,2022,4521651
-North Dakota,ND,Remote,2022,1648
-Ohio,OH,Hybrid,2021,586703
-Ohio,OH,Hybrid,2022,1166836
-Ohio,OH,In Person,2021,33814980
-Ohio,OH,In Person,2022,64325668
-Ohio,OH,Remote,2021,19428
-Ohio,OH,Remote,2022,145596
-Oklahoma,OK,Hybrid,2021,469360
-Oklahoma,OK,Hybrid,2022,778103
-Oklahoma,OK,In Person,2021,13694144
-Oklahoma,OK,In Person,2022,27706323
-Oklahoma,OK,Remote,2021,8415
-Oklahoma,OK,Remote,2022,13551
-Oregon,OR,Hybrid,2021,300868
-Oregon,OR,Hybrid,2022,575876
-Oregon,OR,In Person,2021,11672016
-Oregon,OR,In Person,2022,23251314
-Oregon,OR,Remote,2021,8508
-Oregon,OR,Remote,2022,3124
-Maryland,MD,Hybrid,2021,1228130
-Maryland,MD,Hybrid,2022,2116525
-Maryland,MD,In Person,2021,18339358
-Maryland,MD,In Person,2022,36356473
-Maryland,MD,Remote,2022,299425
-Massachusetts,MA,Hybrid,2021,136405
-Massachusetts,MA,Hybrid,2022,105681
-Massachusetts,MA,In Person,2021,19573235
-Massachusetts,MA,In Person,2022,37501212
-Massachusetts,MA,Remote,2021,701
-Michigan,MI,Hybrid,2021,1047857
-Michigan,MI,Hybrid,2022,445012
-Michigan,MI,In Person,2021,28372052
-Michigan,MI,In Person,2022,56371013
-Michigan,MI,Remote,2021,90175
-Michigan,MI,Remote,2022,322873
-Minnesota,MN,Hybrid,2021,330910
-Minnesota,MN,Hybrid,2022,400383
-Minnesota,MN,In Person,2021,18180441
-Minnesota,MN,In Person,2022,35915045
-Minnesota,MN,Remote,2021,72434
-Minnesota,MN,Remote,2022,151625
-Mississippi,MS,Hybrid,2021,603929
-Mississippi,MS,Hybrid,2022,66577
-Mississippi,MS,In Person,2021,9193277
-Mississippi,MS,In Person,2022,18599052
-Mississippi,MS,Remote,2021,5232
-Mississippi,MS,Remote,2022,7132
-Missouri,MO,Hybrid,2021,185127
-Missouri,MO,Hybrid,2022,407037
-Missouri,MO,In Person,2021,19150116
-Missouri,MO,In Person,2022,37076713
-Missouri,MO,Remote,2021,293
-Missouri,MO,Remote,2022,1652
-Pennsylvania,PA,Hybrid,2021,900321
-Pennsylvania,PA,Hybrid,2022,724211
-Pennsylvania,PA,In Person,2021,33879903
-Pennsylvania,PA,In Person,2022,65514879
-Pennsylvania,PA,Remote,2021,75697
-Pennsylvania,PA,Remote,2022,205226
-Rhode Island,RI,Hybrid,2021,32145
-Rhode Island,RI,Hybrid,2022,28209
-Rhode Island,RI,In Person,2021,2892961
-Rhode Island,RI,In Person,2022,5613305
-Rhode Island,RI,Remote,2021,135
-South Carolina,SC,Hybrid,2021,805260
-South Carolina,SC,Hybrid,2022,442960
-South Carolina,SC,In Person,2021,15217934
-South Carolina,SC,In Person,2022,32024280
-South Carolina,SC,Remote,2021,32188
-South Carolina,SC,Remote,2022,10646
-South Dakota,SD,Hybrid,2021,13620
-South Dakota,SD,Hybrid,2022,930
-South Dakota,SD,In Person,2021,2864766
-South Dakota,SD,In Person,2022,5648374
-South Dakota,SD,Remote,2021,8010
-South Dakota,SD,Remote,2022,4270
-Tennessee,TN,Hybrid,2021,389098
-Tennessee,TN,Hybrid,2022,692886
-Tennessee,TN,In Person,2021,21866639
-Tennessee,TN,In Person,2022,40877108
-Tennessee,TN,Remote,2021,51189
-Texas,TX,Hybrid,2021,712745
-Texas,TX,Hybrid,2022,881903
-Texas,TX,In Person,2021,117383638
-Texas,TX,In Person,2022,228767283
-Texas,TX,Remote,2021,22186
-Texas,TX,Remote,2022,69317
-Utah,UT,Hybrid,2021,70702
-Utah,UT,Hybrid,2022,889587
-Utah,UT,In Person,2021,14684709
-Utah,UT,In Person,2022,27894711
-Utah,UT,Remote,2021,28360
-Utah,UT,Remote,2022,42084
-Vermont,VT,Hybrid,2021,15952
-Vermont,VT,Hybrid,2022,12823
-Vermont,VT,In Person,2021,1527540
-Vermont,VT,In Person,2022,2968192
-Virginia,VA,Hybrid,2021,669636
-Virginia,VA,Hybrid,2022,772249
-Virginia,VA,In Person,2021,26235669
-Virginia,VA,In Person,2022,50729273
-Virginia,VA,Remote,2021,4644
-Washington,WA,Hybrid,2021,237933
-Washington,WA,Hybrid,2022,624974
-Washington,WA,In Person,2021,24378587
-Washington,WA,In Person,2022,46806626
-Washington,WA,Remote,2021,642
-Washington,WA,Remote,2022,2320
-West Virginia,WV,Hybrid,2021,227847
-West Virginia,WV,Hybrid,2022,102961
-West Virginia,WV,In Person,2021,5193389
-West Virginia,WV,In Person,2022,10534694
-West Virginia,WV,Remote,2021,11670
-Wisconsin,WI,Hybrid,2021,1123767
-Wisconsin,WI,Hybrid,2022,146384
-Wisconsin,WI,In Person,2021,16842628
-Wisconsin,WI,In Person,2022,34605996
-Wisconsin,WI,Remote,2021,283
-Wisconsin,WI,Remote,2022,156525
-Wyoming,WY,In Person,2021,1935341
-Wyoming,WY,In Person,2022,3780038
+learning_modality,year,state,student_count
+Hybrid,2021,AK,63105
+Hybrid,2021,AL,374899
+Hybrid,2021,AR,188044
+Hybrid,2021,AZ,158363
+Hybrid,2021,BI,19912
+Hybrid,2021,CA,449502
+Hybrid,2021,CO,647227
+Hybrid,2021,CT,38609
+Hybrid,2021,DC,102869
+Hybrid,2021,DE,53686
+Hybrid,2021,FL,1047825
+Hybrid,2021,GA,1994390
+Hybrid,2021,HI,905440
+Hybrid,2021,IA,7575
+Hybrid,2021,ID,54815
+Hybrid,2021,IL,1570574
+Hybrid,2021,IN,104921
+Hybrid,2021,KS,34140
+Hybrid,2021,KY,252625
+Hybrid,2021,LA,188849
+Hybrid,2021,MA,136405
+Hybrid,2021,MD,1228130
+Hybrid,2021,ME,78564
+Hybrid,2021,MI,1047857
+Hybrid,2021,MN,330910
+Hybrid,2021,MO,185127
+Hybrid,2021,MS,603929
+Hybrid,2021,MT,8605
+Hybrid,2021,NC,1486751
+Hybrid,2021,NE,70437
+Hybrid,2021,NH,5774
+Hybrid,2021,NJ,159375
+Hybrid,2021,NM,210676
+Hybrid,2021,NV,659106
+Hybrid,2021,NY,953263
+Hybrid,2021,OH,586703
+Hybrid,2021,OK,469360
+Hybrid,2021,OR,300868
+Hybrid,2021,PA,900321
+Hybrid,2021,RI,32145
+Hybrid,2021,SC,805260
+Hybrid,2021,SD,13620
+Hybrid,2021,TN,389098
+Hybrid,2021,TX,712745
+Hybrid,2021,UT,70702
+Hybrid,2021,VA,669636
+Hybrid,2021,VT,15952
+Hybrid,2021,WA,237933
+Hybrid,2021,WI,1123767
+Hybrid,2021,WV,227847
+Hybrid,2022,AK,31714
+Hybrid,2022,AL,427920
+Hybrid,2022,AR,382450
+Hybrid,2022,AZ,267447
+Hybrid,2022,BI,12772
+Hybrid,2022,CA,338226
+Hybrid,2022,CO,687886
+Hybrid,2022,CT,60940
+Hybrid,2022,DC,178429
+Hybrid,2022,DE,68536
+Hybrid,2022,GA,892840
+Hybrid,2022,HI,181088
+Hybrid,2022,IA,46147
+Hybrid,2022,ID,112764
+Hybrid,2022,IL,1063469
+Hybrid,2022,IN,310975
+Hybrid,2022,KS,266350
+Hybrid,2022,KY,617182
+Hybrid,2022,LA,134532
+Hybrid,2022,MA,105681
+Hybrid,2022,MD,2116525
+Hybrid,2022,ME,55495
+Hybrid,2022,MI,445012
+Hybrid,2022,MN,400383
+Hybrid,2022,MO,407037
+Hybrid,2022,MS,66577
+Hybrid,2022,MT,2633
+Hybrid,2022,NC,738820
+Hybrid,2022,ND,2591
+Hybrid,2022,NE,290652
+Hybrid,2022,NH,17974
+Hybrid,2022,NJ,306113
+Hybrid,2022,NM,829198
+Hybrid,2022,NV,734128
+Hybrid,2022,NY,232441
+Hybrid,2022,OH,1166836
+Hybrid,2022,OK,778103
+Hybrid,2022,OR,575876
+Hybrid,2022,PA,724211
+Hybrid,2022,RI,28209
+Hybrid,2022,SC,442960
+Hybrid,2022,SD,930
+Hybrid,2022,TN,692886
+Hybrid,2022,TX,881903
+Hybrid,2022,UT,889587
+Hybrid,2022,VA,772249
+Hybrid,2022,VT,12823
+Hybrid,2022,WA,624974
+Hybrid,2022,WI,146384
+Hybrid,2022,WV,102961
+In Person,2021,AK,2623906
+In Person,2021,AL,14839024
+In Person,2021,AR,9900046
+In Person,2021,AZ,23241569
+In Person,2021,BI,172156
+In Person,2021,CA,123890009
+In Person,2021,CO,18779947
+In Person,2021,CT,10517853
+In Person,2021,DC,1793586
+In Person,2021,DE,2944772
+In Person,2021,FL,60834781
+In Person,2021,GA,34234324
+In Person,2021,HI,3078496
+In Person,2021,IA,10864947
+In Person,2021,ID,6474814
+In Person,2021,IL,39579932
+In Person,2021,IN,21652225
+In Person,2021,KS,10659832
+In Person,2021,KY,13764384
+In Person,2021,LA,13838075
+In Person,2021,MA,19573235
+In Person,2021,MD,18339358
+In Person,2021,ME,3470391
+In Person,2021,MI,28372052
+In Person,2021,MN,18180441
+In Person,2021,MO,19150116
+In Person,2021,MS,9193277
+In Person,2021,MT,2926782
+In Person,2021,NC,31907836
+In Person,2021,ND,2241310
+In Person,2021,NE,6887118
+In Person,2021,NH,3289291
+In Person,2021,NJ,28031169
+In Person,2021,NM,6767302
+In Person,2021,NV,8912214
+In Person,2021,NY,55207730
+In Person,2021,OH,33814980
+In Person,2021,OK,13694144
+In Person,2021,OR,11672016
+In Person,2021,PA,33879903
+In Person,2021,PR,6435396
+In Person,2021,RI,2892961
+In Person,2021,SC,15217934
+In Person,2021,SD,2864766
+In Person,2021,TN,21866639
+In Person,2021,TX,117383638
+In Person,2021,UT,14684709
+In Person,2021,VA,26235669
+In Person,2021,VT,1527540
+In Person,2021,WA,24378587
+In Person,2021,WI,16842628
+In Person,2021,WV,5193389
+In Person,2021,WY,1935341
+In Person,2022,AK,5291995
+In Person,2022,AL,28850112
+In Person,2022,AR,19476216
+In Person,2022,AZ,45376870
+In Person,2022,BI,345011
+In Person,2022,CA,243137265
+In Person,2022,CO,36911532
+In Person,2022,CT,19789288
+In Person,2022,DC,3572055
+In Person,2022,DE,5677099
+In Person,2022,FL,120936628
+In Person,2022,GA,70709262
+In Person,2022,HI,7605696
+In Person,2022,IA,21013924
+In Person,2022,ID,12455323
+In Person,2022,IL,78135693
+In Person,2022,IN,41511319
+In Person,2022,KS,20576288
+In Person,2022,KY,27050754
+In Person,2022,LA,27638049
+In Person,2022,MA,37501212
+In Person,2022,MD,36356473
+In Person,2022,ME,6795302
+In Person,2022,MI,56371013
+In Person,2022,MN,35915045
+In Person,2022,MO,37076713
+In Person,2022,MS,18599052
+In Person,2022,MT,5876448
+In Person,2022,NC,64429639
+In Person,2022,ND,4521651
+In Person,2022,NE,13348185
+In Person,2022,NH,6324672
+In Person,2022,NJ,53357791
+In Person,2022,NM,13091158
+In Person,2022,NV,18348759
+In Person,2022,NY,108451750
+In Person,2022,OH,64325668
+In Person,2022,OK,27706323
+In Person,2022,OR,23251314
+In Person,2022,PA,65514879
+In Person,2022,PR,11993238
+In Person,2022,RI,5613305
+In Person,2022,SC,32024280
+In Person,2022,SD,5648374
+In Person,2022,TN,40877108
+In Person,2022,TX,228767283
+In Person,2022,UT,27894711
+In Person,2022,VA,50729273
+In Person,2022,VT,2968192
+In Person,2022,WA,46806626
+In Person,2022,WI,34605996
+In Person,2022,WV,10534694
+In Person,2022,WY,3780038
+Remote,2021,AL,17507
+Remote,2021,AZ,148924
+Remote,2021,BI,7250
+Remote,2021,CA,2976
+Remote,2021,CO,2949
+Remote,2021,GA,270720
+Remote,2021,ID,29707
+Remote,2021,IL,18325
+Remote,2021,IN,18155
+Remote,2021,KS,1872
+Remote,2021,KY,41707
+Remote,2021,LA,28881
+Remote,2021,MA,701
+Remote,2021,ME,3032
+Remote,2021,MI,90175
+Remote,2021,MN,72434
+Remote,2021,MO,293
+Remote,2021,MS,5232
+Remote,2021,MT,1934
+Remote,2021,NC,2995
+Remote,2021,NJ,1513
+Remote,2021,NM,9067
+Remote,2021,NV,16746
+Remote,2021,NY,22163
+Remote,2021,OH,19428
+Remote,2021,OK,8415
+Remote,2021,OR,8508
+Remote,2021,PA,75697
+Remote,2021,RI,135
+Remote,2021,SC,32188
+Remote,2021,SD,8010
+Remote,2021,TN,51189
+Remote,2021,TX,22186
+Remote,2021,UT,28360
+Remote,2021,VA,4644
+Remote,2021,WA,642
+Remote,2021,WI,283
+Remote,2021,WV,11670
+Remote,2022,AL,48084
+Remote,2022,AR,1880
+Remote,2022,AZ,197330
+Remote,2022,BI,8963
+Remote,2022,CA,29706
+Remote,2022,CO,6950
+Remote,2022,DC,1001
+Remote,2022,DE,10946
+Remote,2022,GA,32030
+Remote,2022,ID,2777
+Remote,2022,IL,88264
+Remote,2022,IN,59344
+Remote,2022,KY,106101
+Remote,2022,LA,75277
+Remote,2022,MD,299425
+Remote,2022,MI,322873
+Remote,2022,MN,151625
+Remote,2022,MO,1652
+Remote,2022,MS,7132
+Remote,2022,MT,831
+Remote,2022,NC,1026
+Remote,2022,ND,1648
+Remote,2022,NJ,736218
+Remote,2022,NM,16698
+Remote,2022,NY,94141
+Remote,2022,OH,145596
+Remote,2022,OK,13551
+Remote,2022,OR,3124
+Remote,2022,PA,205226
+Remote,2022,PR,585036
+Remote,2022,SC,10646
+Remote,2022,SD,4270
+Remote,2022,TX,69317
+Remote,2022,UT,42084
+Remote,2022,WA,2320
+Remote,2022,WI,156525
