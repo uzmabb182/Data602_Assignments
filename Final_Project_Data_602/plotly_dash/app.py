@@ -13,23 +13,19 @@ conn = engine.connect()
 
 app = Dash(__name__)
 
-df1 = pd.read_sql("""SELECT state, SUM(cases) AS total_cases, SUM(deaths) AS total_deaths
-        FROM covid
-        WHERE year = 2021
-        GROUP By state
-        ORDER BY state;""",conn)
+df1 = pd.read_sql("""SELECT state, round(cases_per_10k, 2) AS cases_per_10k
+        FROM covid_df
+        WHERE year = 2021;""",conn)
 
-df2 = pd.read_sql("""SELECT state, SUM(cases) AS total_cases, SUM(deaths) AS total_deaths
-        FROM covid
-        WHERE year = 2022
-        GROUP By state
-        ORDER BY state;""",conn)
+df2 = pd.read_sql("""SELECT state, round(cases_per_10k, 2) AS cases_per_10k
+        FROM covid_df
+        WHERE year = 2022;""",conn)
 
 # Build your components
 app = Dash(__name__, external_stylesheets=[dbc.themes.VAPOR])
 mytitle = dcc.Markdown(children='# App that Analyzes Covid Data for the Year 2021/2022')
 mygraph = dcc.Graph(figure={})
-dropdownGraph = dcc.Dropdown(options=['Bar Plot1', 'Bar Plot2', 'Scatter Plot'],
+dropdownGraph = dcc.Dropdown(options=['Bar Plot1', 'Scatter Plot'],
                         value='Bar Plot1',  # initial value displayed when page first loads
                         clearable=False)
 
@@ -49,26 +45,20 @@ app.layout = dbc.Container([mytitle, mygraph, dropdownGraph, dropdownYear])
 def update_graph(user_input_graph, user_input_year):  # function arguments come from the component property of the Input
     if user_input_year == '2021':
         if user_input_graph == 'Bar Plot1':
-            fig = px.bar(df1, x="total_cases", y="state", color="state")
-
-        if user_input_graph == 'Bar Plot2':
-            fig = px.bar(df1, x="total_deaths", y="state", color="state")
+            fig = px.bar(df1, x="cases_per_10k", y="state", color="state")
 
         elif user_input_graph == 'Scatter Plot':
-            fig = px.scatter(df1, x="total_cases", y="state",
-                    size="total_deaths", color="state", hover_name="total_deaths",
+            fig = px.scatter(df1, x="cases_per_10k", y="state",
+                    size="cases_per_10k", color="state", hover_name="cases_per_10k",
                     log_x=True, size_max=60)
 
     elif user_input_year == '2022':
         if user_input_graph == 'Bar Plot1':
-            fig = px.bar(df2, x="total_cases", y="state", color="state")
-
-        if user_input_graph == 'Bar Plot2':
-            fig = px.bar(df2, x="total_deaths", y="state", color="state")
+            fig = px.bar(df2, x="cases_per_10k", y="state", color="state")
 
         elif user_input_graph == 'Scatter Plot':
-            fig = px.scatter(df2, x="total_cases", y="state",
-                    size="total_deaths", color="state", hover_name="total_deaths",
+            fig = px.scatter(df2, x="cases_per_10k", y="state",
+                    size="cases_per_10k", color="state", hover_name="cases_per_10k",
                     log_x=True, size_max=60)
        
     return fig  # returned objects are assigned to the component property of the Output

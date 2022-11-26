@@ -32,3 +32,14 @@ CREATE TABLE "covid_df" (
     "deaths_per_10k" decimal   NOT NULL
 );
 
+SELECT state, round(cases_per_10k, 2) AS cases_per_10k
+FROM covid_df
+WHERE year = 2021
+
+SELECT state, round(cases_per_10k, 2) AS cases_per_10k
+FROM covid_df
+WHERE year = 2022
+
+SELECT *
+FROM modality_df
+WHERE year = 2022
